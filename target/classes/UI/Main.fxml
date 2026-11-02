@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="380.0" prefWidth="350.0" spacing="15.0" styleClass="root-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BMIController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+    
+    <Label styleClass="title-label" text="Kalkulator BMI" />
+    
+    <VBox spacing="5.0">
+        <Label styleClass="input-label" text="Tinggi Badan (cm):" />
+        <TextField fx:id="inputTinggi" promptText="Contoh: 170" styleClass="input-field" />
+    </VBox>
+    
+    <VBox spacing="5.0">
+        <Label styleClass="input-label" text="Berat Badan (kg):" />
+        <TextField fx:id="inputBerat" promptText="Contoh: 65" styleClass="input-field" />
+    </VBox>
+    
+    <Button mnemonicParsing="false" onAction="#tombolHitungDitekan" prefWidth="180.0" styleClass="action-button" text="Hitung BMI" />
+    
+    <Label fx:id="labelHasil" alignment="CENTER" contentDisplay="CENTER" styleClass="result-label" text="Hasil akan muncul di sini" textAlignment="CENTER" wrapText="true" />
+</VBox>
