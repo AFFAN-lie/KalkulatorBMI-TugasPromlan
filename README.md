@@ -26,4 +26,4 @@
    mvn clean javafx:run
 
 ## Tampilan UI
-![Tampilan Aplikasi Kalkulator BMI](assets/Screnshot Tampilan UI.png)
+![Tampilan Aplikasi Kalkulator BMI](assets/Screenshot.png)
